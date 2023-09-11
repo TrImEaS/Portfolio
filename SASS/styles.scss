@@ -1,11 +1,12 @@
 @use 'mixins.scss';
+$backColor: #080c18;
+$secondColor: #5cd9e2;
 
 
 * {
     padding: 0;
     margin: 0;
 }
-
 
 #intro_container {
     @include mixins.flexContainer(center);
@@ -14,19 +15,17 @@
     height: 700px;
     color: #fff;
     padding: 20px;
-    background:{
-        color: #111;
-        size: cover;
-        repeat: no-repeat;
-        image: url(/Logo/introBackground.jpg);
+
+    background: {
+        color: $backColor;
     }
 }
-
 
 #nav {
     @include mixins.flexContainer(center);
     width: 80%;
     justify-content: space-between;
+
     &_hero {
         position: absolute;
         top: 0;
@@ -34,20 +33,24 @@
         height: 100%;
     }
 
-    &_left{
+    &_left {
         @include mixins.flexContainer(center);
-        justify-content:  space-between;
+        justify-content: space-between;
         position: relative;
         list-style: none;
 
         p {
-            margin-bottom: 3.5px;
+            font-size: 20px;
         }
+
+
     }
 
     &_logo {
         width: 30px;
         height: 30px;
+        margin-right: 10px;
+        margin-top: 1px;
     }
 
     &_right {
@@ -60,10 +63,12 @@
             color: #fff;
             text-decoration: none;
             margin: 0 30px;
+            border-bottom: 3px solid transparent;
+            transition: border-bottom 0.3s ease;
 
-            &:hover{
-                color: #42c920;
-                transition: 300ms;
+            &:hover {
+                color: $secondColor;
+                border-bottom: 3px solid #5cd9e2;
             }
         }
 
@@ -80,9 +85,28 @@
 
     p:first-child {
         font-size: 4.5rem;
+        opacity: 0;
+        animation: nameSpawn 3s forwards 1;
+
+        @keyframes nameSpawn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
     }
+
     p:nth-child(2) {
         font-size: 2rem;
     }
-}
 
+    #intro_name {
+        color: $secondColor;
+       
+
+    }
+
+}

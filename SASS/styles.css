@@ -11,10 +11,7 @@
   height: 700px;
   color: #fff;
   padding: 20px;
-  background-color: #111;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/Logo/introBackground.jpg);
+  background-color: #080c18;
 }
 
 #nav {
@@ -37,11 +34,13 @@
   list-style: none;
 }
 #nav_left p {
-  margin-bottom: 3.5px;
+  font-size: 20px;
 }
 #nav_logo {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
+  margin-top: 1px;
 }
 #nav_right {
   display: flex;
@@ -53,10 +52,12 @@
   color: #fff;
   text-decoration: none;
   margin: 0 30px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease;
 }
 #nav_right a:hover {
-  color: #42c920;
-  transition: 300ms;
+  color: #5cd9e2;
+  border-bottom: 3px solid #5cd9e2;
 }
 
 #welcome_container {
@@ -67,9 +68,22 @@
 }
 #welcome_container p:first-child {
   font-size: 4.5rem;
+  opacity: 0;
+  animation: nameSpawn 3s forwards 1;
+}
+@keyframes nameSpawn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 #welcome_container p:nth-child(2) {
   font-size: 2rem;
+}
+#welcome_container #intro_name {
+  color: #5cd9e2;
 }
 
 /*# sourceMappingURL=styles.css.map */
