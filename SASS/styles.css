@@ -17,10 +17,13 @@
 #intro_container .overlay {
   position: absolute;
   bottom: 0;
-  left: 100;
-  z-index: 5;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.7);
-  animation: opacityControl 2.5s forwards;
+  animation: opacityControl 2s ease;
+  animation-fill-mode: forwards;
 }
 @keyframes opacityControl {
   from {

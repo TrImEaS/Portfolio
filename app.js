@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function typeWriter() {
         let txt = 'Frontend Developer';
-        let speed = 100;
+        let speed = 60;
 
         if (i < txt.length) {
             document.getElementById("typewriter").textContent += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
         }
-    } setTimeout(typeWriter, 50);
+    } setTimeout(typeWriter, 0);
 })
 
 //Hover for logo
