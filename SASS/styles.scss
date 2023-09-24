@@ -1,186 +1,179 @@
-@use 'mixins.scss';
+@use "mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Forum&display=swap');
 $backColor: #080c18;
 $secondColor: #5cd9e2;
+$font: 'VT323', monospace, Helvetica, sans-serif;
 $backImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23265A5E' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%235CD9E2'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E";
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: $font;
 }
 
 body {
-    background-image: url($backImage);
-    background-color: #080C18;
+  @include mixins.flexContainer(center);
+  justify-content: center;
+  background-image: url($backImage);
+  background-color: #080c18;
+
 }
 
-
 #intro_container {
-    @include mixins.flexContainer(center);
-    flex-direction: column;
-    position: relative;
-    min-height: 1000px;
-    color: #fff;
-    padding: 20px;
+  @include mixins.flexContainer(center);
+  flex-direction: column;
+  position: relative;
+  min-height: 1000px;
+  color: #fff;
+  padding: 20px;
+  width: 80%;
 
-    .overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: opacityControl 2s ease;
+    animation-fill-mode: forwards;
+
+    @keyframes opacityControl {
+      from {
         height: 100%;
         width: 100%;
-        z-index: 100;
-        background-color: rgba(0, 0, 0, .7);
-        animation: opacityControl 2s ease;
-        animation-fill-mode: forwards;
+      }
 
-        @keyframes opacityControl {
-            from {
-                height: 100%;
-                width: 100%;
-            }
-
-            to {
-                height: 0;
-            }
-        }
+      to {
+        height: 0;
+      }
     }
+  }
 }
 
 #nav {
-    @include mixins.flexContainer(center);
-    position: fixed;
-    justify-content: space-around;
-    height: 80px;
+  @include mixins.flexContainer(center);
+  position: fixed;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 20px;
+  margin-top: -20px;
+  z-index: 20;
+  animation: elementSpawn 2.5s forwards 1;
+  transition: background-color 0.3s ease;
+
+  &_hero {
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
+  }
+
+  &_left {
+    @include mixins.flexContainer(center);
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+
+    p {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: $secondColor;
+    }
+  }
+
+  .nav_logo_circle {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
     background-color: transparent;
-    padding: 0 20px;
-    margin-top: -20px;
-    z-index: 20;
-    animation: elementSpawn 2.5s forwards 1;
-    transition: background-color 0.3s ease;
+    border-radius: 100%;
+    border: #fff solid 1px;
+  }
 
-    &_hero {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
+  &_logo_t {
+    @include mixins.flexContainer(center);
+    justify-content: center;
+    color: #fff;
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    list-style: none;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 30px;
+
+      &:hover {
+        color: $secondColor;
+      }
     }
-
-    &_left {
-        @include mixins.flexContainer(center);
-        justify-content: space-between;
-        position: relative;
-        list-style: none;
-
-        p {
-            font-size: 20px;
-            margin-left: 10px;
-        }
-
-        &:hover {
-            color: $secondColor;
-        }
-    }
-
-    .nav_logo_circle {
-        width: 20px;
-        height: 20px;
-        margin-bottom: 2px;
-        background-color: transparent;
-        border-radius: 100%;
-        border: #fff solid 1px;
-    }
-
-    &_logo_t {
-        @include mixins.flexContainer(center);
-        justify-content: center;
-        color: #fff;
-    }
-
-    &_right {
-        display: flex;
-        align-items: center;
-        font-size: 23px;
-        list-style: none;
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 30px;
-
-            &:hover {
-                color: $secondColor;
-            }
-        }
-
-    }
-
+  }
 }
-
 
 #welcome_container {
+  @include mixins.flexContainer(center);
+  flex-direction: column;
+  margin-top: 270px;
+  z-index: 10;
+  opacity: 0;
+  animation: elementSpawn 2.5s forwards 1;
+
+  p:first-child {
+    font-size: 4.5rem;
+  }
+
+  p:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  #intro_name {
+    color: $secondColor;
+  }
+
+  #typewriter {
+    height: 35px;
+  }
+
+  .flex-container {
     @include mixins.flexContainer(center);
-    flex-direction: column;
-    margin-top: 270px;
-    z-index: 10;
-    opacity: 0;
-    animation: elementSpawn 2.5s forwards 1;
 
-    p:first-child {
-        font-size: 4.5rem;
-    }
-
-    p:nth-child(2) {
-        font-size: 2rem;
-    }
-
-    #intro_name {
+    .flex-icon {
+      margin: 15px 15px;
+      color: #fff;
+      &:hover {
         color: $secondColor;
-
+      }
     }
-
-    #typewriter {
-        height: 35px
-    }
-
-    .flex-container {
-        @include mixins.flexContainer(center);
-
-        .flex-icon {
-            margin: 15px 15px;
-            color: #fff; 
-
-            &:hover {
-                color: $secondColor;
-            }
-        }
-    }
-
+  }
 }
-
 #about_container {
-    @include mixins.flexContainer(center);
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    animation: elementSpawn 2.5s forwards 1;
+  @include mixins.flexContainer(center);
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  animation: elementSpawn 2.5s forwards 1;
 }
-
-#about-content {
-    background-color: #16014636;
-
-}
-
 
 @keyframes elementSpawn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
