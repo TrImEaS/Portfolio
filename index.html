@@ -10,54 +10,95 @@
 </head>
 
 <body>
-		<section id="intro_container">
-			<div class="overlay"></div>
-			<nav id="nav">
-				<ul id="nav_left">
-					<a id="nav_hero" href="#"></a>
-					<li>
-						<div class="nav_logo_circle">
-							<div id="nav_logo_t" class="nav_logo_circle">T</div>
-						</div>
-					</li>
-					<li>
-						<p>ROJAS THOMAS</p>
-					</li>
-				</ul>
-				<ul id="nav_right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Resume</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
+	<section id="intro_container">
+		<nav id="nav">
+			<ul id="nav_left">
+				<a id="nav_hero" href="#"></a>
+				<li>
+					<div class="nav_logo_circle">
+						<div id="nav_logo_t" class="nav_logo_circle">T</div>
+					</div>
+				</li>
+				<li>
+					<p>ROJAS THOMAS</p>
+				</li>
+			</ul>
+			<ul id="nav_right">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 
-			<div id="welcome_container">
-				<p>Hi, I'm <span id="intro_name">Thomas</span><br>
-				<p id="typewriter"></p>
-				</p>
-				<div class="flex-container">
-					<a class="flex-icon" href="https://wa.me/541135790133"><i class="fa fa-whatsapp fa-2x"></i></a>
-					<a class="flex-icon" href="https://github.com/TrImEaS"><i class="fa fa-github fa-2x"></i></a>
-					<a class="flex-icon" href="https://www.instagram.com/_trimeas_/"><i class="fa fa-instagram fa-2x"></i></a>
-					<a class="flex-icon" href="https://www.linkedin.com/in/thomas-rojas-2a7780207/"><i
-							class="fa fa-linkedin fa-2x"></i></a>
-				</div>
+		<div id="welcome_container">
+			<p>Hi, I'm <span id="intro_name">Thomas</span><br>
+			<p id="typewriter"></p>
+			</p>
+			<div class="flex-container">
+				<a class="flex-icon" href="https://wa.me/541135790133"><i class="fa fa-whatsapp fa-2x"></i></a>
+				<a class="flex-icon" href="https://github.com/TrImEaS"><i class="fa fa-github fa-2x"></i></a>
+				<a class="flex-icon" href="https://www.instagram.com/_trimeas_/"><i class="fa fa-instagram fa-2x"></i></a>
+				<a class="flex-icon" href="https://www.linkedin.com/in/thomas-rojas-2a7780207/"><i
+						class="fa fa-linkedin fa-2x"></i></a>
 			</div>
-			<section id="about_container">
-				<div id="about-content" class="flex-container">
-					<p>I bring approximately three years of programming experience,
-						cultivated during my university studies and personal projects.
-						In my most recent role as a frontend developer and system manager for the past three months,
-						I've harnessed this knowledge to deliver innovative digital solutions with a user-centric approach</p>
-				</div>
-			</section>
-		</section>
+		</div>
+		<p id="intro_text">Frontend developer and system manager with more than 2 years of experience.
+			I specialize in user-centric digital solutions</p>
+	</section>
 
-		<section></section>
-		<section></section>
-		<section></section>
-		<footer></footer>
+	<section class="dark_background" id="about_container">
+		<div class="about-content">
+			<h1>About Me</h1>
+			<p>I am a frontend developer with enough experience to lead and take care of the development of the current
+				projects
+				of the company where I work, it should be noted that I have not really been a professional in the area of web
+				development, but my experience with different personal and university projects led me to where I am. Thanks to
+				my
+				passion for development, it is easy for me to learn anything and thanks to this tool I am constantly updated
+				with
+				new technologies that are appearing and it is noteworthy that I am steps away from being Fullstack.
+				I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that
+				matches
+				my skills and experience then don't hesitate to contact me.</p>
+		</div>
+		<div class="about-content">
+			<h1>My Skills</h1>
+			<div id="skills_container">
+				<img class="icon" src="images/js.svg" alt="Javascript image">
+				<img class="icon" src="images/css3.svg" alt="CSS3 image">
+				<img class="icon" src="images/html5.svg" alt="HTML image">
+				<img class="icon" src="images/node.svg" alt="NodeJs image">
+				<img class="icon" src="images/sass.svg" alt="SASS image">
+				<img class="icon" src="images/database.svg" alt="Database image">
+				<img class="icon" src="images/restapi.svg" alt="RestApi image">
+				<img class="icon" src="images/github.svg" alt="GitHub Image">
+				<img class="icon" src="images/java.svg" alt="Java Image">
+				<img class="icon" src="images/c.svg" alt="C Image">
+			</div>
+		</div>
+	</section>
+
+	<section class="dark_background" id="projects_container">
+		<div class="project-container"></div>
+		<div class="project-container"></div>
+		<div class="project-container"></div>
+		<div class="project-container"></div>
+	</section>
+
+	<footer id="contact_container">
+		
+		<form id="contact_form" action="">
+			<label for="email">Enter your email</label>
+			<input name="email" type="email">
+			<label for="subject">Add a Subject</label>
+			<input name="subject" type="text">
+			<label for="description">Enter a description</label>
+			<input name="description" type="text">
+			<button id="send_btn" type="button">Send</button>
+		
+		</form>
+	</footer>
 </body>
 
 <script src="app.js"></script>

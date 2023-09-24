@@ -27,7 +27,7 @@ function setLogoStyles (color, borderColor) {
 const hero = document.getElementById('nav_hero')
 
 hero.addEventListener('mouseover', () => {
-  setLogoStyles('#5cd9e2', '#5cd9e2')
+  setLogoStyles('#c9cefc', '#c9cefc')
 })
 
 hero.addEventListener('mouseleave', () => {
