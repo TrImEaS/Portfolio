@@ -183,7 +183,7 @@ body {
   font-size: $textSize;
   margin-bottom: 100px;
   border-radius: 40px;
-  padding: 30px 30px 300px 30px;
+  padding: 30px;
   width: 70%;
 
   h1 {
@@ -201,24 +201,47 @@ body {
 
 #skills_container {
   @include mixins.flexContainer(center);
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
-
   .icon {
     width: 150px;
     height: 150px;
-    padding: 30px;
-  }
-  .icon:nth-child(4) {
-    width: 200px;
-    height: 200px;
-  }
-  .icon:nth-child(7) {
-    width: 230px;
-    height: 230px;
+    transition: transform 0.3s ease;
+    margin: 60px;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transform: scale(1.2);
+    }
+    &:nth-child(7) {
+      background-color: #c9cefc8d;
+      border-radius: 40px;
+    }
   }
 }
 
 #projects_container {
-  height: 500px;
+  @include mixins.flexContainer(center);
+  justify-content: space-around;
+  width: 100%;
+  padding: 100px;
+  .project-item {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #c9cefc;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  #contact_form {
+    height: 1000px;
+    width: 100%;
+    background-color: red;
+  }
+
 }
