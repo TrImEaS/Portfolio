@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   background-color: #080c18;
   background-image: url($backImage);
+  overflow-x: hidden;
 }
 
 #intro_container {
@@ -92,10 +93,11 @@ body {
     font-size: 23px;
     list-style: none;
 
-    a {
+    span {
       color: #fff;
       text-decoration: none;
       margin: 0 30px;
+      cursor: pointer;
 
       &:hover {
         color: $secondColor;
@@ -188,21 +190,23 @@ body {
 
   h1 {
     font-size: $titleSize;
-    border-bottom: 10px solid transparent;
-    border-image: linear-gradient(45deg, $primaryColor, $backColor);
-    border-image-slice: 1;
+    border-bottom: 10px solid;
+    border-bottom-right-radius: 20%;
     margin: 80px 0 150px 0;
   }
 }
 
 .dark_background {
   background-color: $secondBackColor;
+  border-radius: 10%;
+  border-style: ridge;
 }
 
 #skills_container {
   @include mixins.flexContainer(center);
   justify-content: space-around;
   flex-wrap: wrap;
+
   .icon {
     width: 150px;
     height: 150px;
@@ -221,15 +225,16 @@ body {
   }
 }
 
-#projects_container {
+.projects_container {
   @include mixins.flexContainer(center);
   justify-content: space-around;
   width: 100%;
-  padding: 100px;
+  flex-wrap: wrap;
+
   .project-item {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
+    margin: 50px;
+    min-width: 400px;
+    height: 400px;
     background-color: #c9cefc;
     transition: transform 0.3s ease;
 
@@ -237,11 +242,89 @@ body {
       transform: scale(1.2);
     }
   }
+}
 
-  #contact_form {
-    height: 1000px;
-    width: 100%;
-    background-color: red;
+#contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #0e0e0e;
+  margin-top: 100px;
+  padding: 40px;
+  
+  #contact_footer {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+
+    i {
+      color: #c9cefc;
+      margin-top: 20px;
+      
+      &:hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &_email{
+    @include mixins.flexContainer(center);
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
+
+  }
+
+  #email {
+    text-decoration: none;
+    color: #c9cefc;
+    &:hover {
+      transition: transform 0.3s ease;
+      transform: scale(1.2);
+    }
+  }
+  p {
+    color: $secondColor;
+    font-size: 30px;
+  }
+  span {
+    color: $secondColor;
+    margin-top: 5px;
+    cursor: pointer;
+
+    &:hover {
+      transition: transform 0.3s ease;
+      transform: scale(1.2);
+    }
   }
 
 }
+
+.dash-bar {
+  height: 70px;
+  width: 3px;
+  background-color: #c9cefc;
+  transform: rotate(10deg);
+}
+
+// #contact_form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   width: 200px;
+//   color: #fff;
+//   padding: 20px;
+//   border-radius: 10%;
+//   background-color: transparent;
+
+//   input {
+//     background-color: mistyrose;
+//     border: transparent;
+//     margin: 10px;
+//     border-radius: 10px;
+//   }
+// }

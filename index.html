@@ -24,10 +24,11 @@
 				</li>
 			</ul>
 			<ul id="nav_right">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Resume</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><span id="home">Home</span></li>
+				<li><span id="about">About</span></li>
+				<li><span id="skills">Skills</span></li>
+				<li><span id="projects">Projects</span></li>
+				<li><span id="contact">Contact</span></li>
 			</ul>
 		</nav>
 
@@ -46,6 +47,7 @@
 		<p id="intro_text">Frontend developer and system manager with more than 2 years of experience.
 			I specialize in user-centric digital solutions</p>
 	</section>
+	<div id="about_scroll"></div>
 
 	<section class="dark_background" id="about_container">
 		<div class="about-content">
@@ -62,8 +64,10 @@
 				matches
 				my skills and experience then don't hesitate to contact me.</p>
 		</div>
+		<div id="skills_scroll"></div>
 		<div class="about-content">
-			<h1>My Skills</h1>
+
+			<h1>Skills</h1>
 			<div id="skills_container">
 				<img class="icon" src="images/js.svg" alt="Javascript image">
 				<img class="icon" src="images/css3.svg" alt="CSS3 image">
@@ -75,20 +79,47 @@
 				<img class="icon" src="images/github.svg" alt="GitHub Image">
 				<img class="icon" src="images/java.svg" alt="Java Image">
 				<img class="icon" src="images/c.svg" alt="C Image">
+				<div id="projects_scroll"></div>
+			</div>
+
+			<h1>Proyects</h1>
+			<div class="projects_container">
+				<div class="project-item"></div>
+				<div class="project-item"></div>
+				<div class="project-item"></div>
+				<div class="project-item"></div>
 			</div>
 		</div>
 	</section>
 
-	<section class="dark_background" id="projects_container">
-		<div class="project-item"></div>
-		<div class="project-item"></div>
-		<div class="project-item"></div>
-		<div class="project-item"></div>
-	</section>
 
-	<footer class="dark_background" id="contact_container">
-		
-		<form id="contact_form" action="">
+	<footer id="contact_container">
+
+		<div id="contact_footer" class="flex-container">
+			<a class="flex-icon" href="https://wa.me/541135790133"><i class="fa fa-whatsapp fa-2x"></i></a>
+			<div class="dash-bar"></div>
+			<a class="flex-icon" href="https://github.com/TrImEaS"><i class="fa fa-github fa-2x"></i></a>
+			<div class="dash-bar"></div>
+			<a class="flex-icon" href="https://www.instagram.com/_trimeas_/"><i class="fa fa-instagram fa-2x"></i></a>
+			<div class="dash-bar"></div>
+			<a class="flex-icon" href="https://www.linkedin.com/in/thomas-rojas-2a7780207/"><i
+					class="fa fa-linkedin fa-2x"></i></a>
+		</div>
+
+		<div id="contact_container_email">
+			<a id="email" href="mailto:Trimeas@hotmail.com">Click to send mail: <br>Trimeas@hotmail.com</a>
+			<p>TrImEaS Web Site</p>
+			<span id="top-btn">↑ Return to top ↑</span>
+		</div>
+	</footer>
+</body>
+
+<script src="app.js"></script>
+
+</html>
+
+<!-- <form id="contact_form" action="">
+			<h1>Mail form</h1>
 			<label for="email">Enter your email</label>
 			<input name="email" type="email">
 			<label for="subject">Add a Subject</label>
@@ -96,11 +127,4 @@
 			<label for="description">Enter a description</label>
 			<input name="description" type="text">
 			<button id="send_btn" type="button">Send</button>
-	
-		</form>
-	</footer>
-</body>
-
-<script src="app.js"></script>
-
-</html>
+		</form> -->

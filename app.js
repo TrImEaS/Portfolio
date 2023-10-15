@@ -44,3 +44,24 @@ window.addEventListener('scroll', () => {
     nav.style.backgroundColor = 'transparent'
   }
 })
+
+// Scroll function id to id
+function scrollNav (scrollButtonId, toScrollId) {
+  const scrollButton = document.getElementById(scrollButtonId)
+  const toScroll = document.getElementById(toScrollId)
+
+  if (scrollButton && toScroll) {
+    scrollButton.addEventListener('click', function () {
+      toScroll.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  scrollNav('home', 'intro_container')
+  scrollNav('about', 'about_scroll')
+  scrollNav('skills', 'skills_scroll')
+  scrollNav('projects', 'projects_scroll')
+  scrollNav('contact', 'contact_container')
+  scrollNav('top-btn', 'intro_container')
+})
