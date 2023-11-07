@@ -1,5 +1,9 @@
 @mixin flexContainer($a) {
-    display: flex;
-    align-items: $a;
+  display: flex;
+  align-items: $a;
 }
-
+@mixin media-up($breakpoints, $breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
