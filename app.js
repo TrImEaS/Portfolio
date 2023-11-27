@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let i = 0
 
   function typeWriter () {
-    const txt = 'Frontend Developer'
+    const txt = 'Web Developer'
     const speed = 60
 
     if (i < txt.length) {
@@ -57,11 +57,29 @@ function scrollNav (scrollButtonId, toScrollId) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   scrollNav('home', 'intro_container')
   scrollNav('about', 'about_scroll')
   scrollNav('skills', 'skills_scroll')
   scrollNav('projects', 'projects_scroll')
   scrollNav('contact', 'contact_container')
   scrollNav('top-btn', 'intro_container')
+
+  scrollNav('home-m', 'intro_container')
+  scrollNav('about-m', 'about_scroll')
+  scrollNav('skills-m', 'skills_scroll')
+  scrollNav('projects-m', 'projects_scroll')
+  scrollNav('contact-m', 'contact_container')
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const icon = document.getElementById('nav_mobile_icon')
+  const backIcon = document.getElementById('back_btn')
+  const container = document.getElementById('nav_mobile_container')
+  backIcon.addEventListener('click', () => {
+    container.style.top = '-300px'
+  })
+  icon.addEventListener('click', () => {
+    container.style.top = '0px'
+  })
 })

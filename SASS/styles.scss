@@ -25,6 +25,11 @@ $breakpoints: (
 }
 
 body {
+  background-image: url($backImage);
+  background-color: #080c18;
+}
+
+#body {
   @include mixins.flexContainer(center);
   justify-content: center;
   flex-direction: column;
@@ -44,14 +49,6 @@ body {
   color: #fff;
   padding: 20px;
   width: 100%;
-
-  @include mixins.media-up($breakpoints, sm) {
-    transform: scale(0.5);
-  }
-
-  @include mixins.media-up($breakpoints, md) {
-    transform: scale(0.9);
-  }
 }
 
 #nav {
@@ -66,6 +63,60 @@ body {
   z-index: 20;
   animation: elementSpawn 2.5s forwards 1;
   transition: background-color 0.3s ease;
+
+  .nav_mobile {
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    font-size: 23px;
+    list-style: none;
+    gap: 20px;
+    margin: 30px 0 0 70px;
+
+    span {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 30px;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondColor;
+      }
+    }
+  }
+  &_mobile_icon {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    margin: 30px 0 0 50px;
+    gap: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+    &:hover {
+      color: $secondColor;
+    }
+  }
+  &_mobile_container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(14, 14, 14);
+    z-index: 20;
+    top: -300px;
+    transition: top 0.5s ease;
+
+    #back_btn {
+      position: absolute;
+      left: 50%;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondColor;
+      }
+    }
+  }
 
   &_hero {
     position: absolute;
@@ -105,7 +156,7 @@ body {
     color: #fff;
   }
 
-  &_right {
+  .nav_right {
     display: flex;
     align-items: center;
     font-size: 23px;
@@ -136,7 +187,7 @@ body {
   animation: elementSpawn 2.5s forwards 1;
 
   p:first-child {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   p:nth-child(2) {
@@ -203,7 +254,6 @@ body {
   font-size: $textSize;
   margin-bottom: 100px;
   border-radius: 40px;
-  padding: 30px;
   width: 70%;
 
   h1 {
@@ -218,6 +268,7 @@ body {
   background-color: $secondBackColor;
   border-radius: 10%;
   border-style: ridge;
+  min-width: 600px;
 }
 
 #skills_container {
@@ -256,8 +307,8 @@ body {
   .project-item {
     margin: 50px;
     min-width: 300px;
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     background-color: #c9cefc;
     transition: transform 0.3s ease;
     box-sizing: border-box;
@@ -345,4 +396,51 @@ body {
   width: 3px;
   background-color: #c9cefc;
   transform: rotate(10deg);
+}
+
+@media screen and (max-width: 1000px) {
+  #nav {
+    .nav_right {
+      display: none;
+    }
+    .nav_mobile {
+      display: flex;
+    }
+
+    &_mobile {
+      &_container {
+        display: inline-block;
+      }
+
+      &_icon {
+        display: inline-block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #welcome_container {
+    p:first-child {
+      text-align: center;
+    }
+  }
+
+  #contact_container {
+    width: 100%;
+    p,
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .about-content {
+    width: 50%;
+  }
+  .projects_container {
+    justify-content: center;
+
+    .container {
+      width: 100%;
+    }
+  }
 }
