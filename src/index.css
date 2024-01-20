@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url(https://unpkg.com/css-peeps@1/css-peeps.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.avatar {
+  --peep-head: flat-top1;
+  --peep-face: calm;
+  --peep-body: tee2;
+
+  --peep-hat-color: #FC03C2;
+  --peep-hair-color: #7300E6;
+  --peep-skin-color: #ffdbc4;
+  --peep-accessory-color: #000;
+  --peep-facial-hair-color: #ffd700;
+  --peep-object-color: #ffa500;
+  --peep-clothes-color: #ff0000;
+
+  --peep-body-offset-x: -10px;
+  --peep-body-offset-y: 4px;
+}
+
+.avatar2 {
+  --peep-head: flat-top1;
+  --peep-face: suspicious;
+  --peep-body: tee-crossed;
+
+  --peep-hat-color: #FC03C2;
+  --peep-hair-color: #7300E6;
+  --peep-skin-color: #ffdbc4;
+  --peep-accessory-color: #000;
+  --peep-facial-hair-color: #ffd700;
+  --peep-object-color: #ffa500;
+  --peep-clothes-color: #ff0000;
+
+  --peep-body-offset-x: -10px;
+  --peep-body-offset-y: 4px;
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+ 
+.content-div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  )!important
+}
