@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLink, workImg }) {
+export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLink, workImg, text}) {
 
   return(
       <div style={{backgroundImage: `url(${workImg})`}} 
@@ -9,20 +9,20 @@ export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLin
         
         <div className='opacity-0 group-hover:opacity-100 text-slate-950 duration-300'>
           <span className='text-2xl font-bold tracking-wider'>
-            React Js Application
+            {text}
           </span>
           <div className='pt-8 text-center'>
             <a href={demoLink || '#'}>
               <button 
                 className={`text-center rounded-lg px-4 py-3 m-2 text-gray-700 font-bold text-lg
-                ${demoDisabled ? 'bg-slate-600' : 'bg-white'}`}
+                ${demoDisabled ? 'bg-slate-600' : 'bg-white hover:bg-cyan-300'}`}
                 disabled={demoDisabled}>
                 Demo
               </button>
             </a>
             <a href={codeLink || '#'}>
-              <button className={`text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg
-                ${codeDisabled ? 'bg-slate-600' : '*:bg-white'}`}
+              <button className={`hover:bg-cyan-300 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg
+                ${codeDisabled ? 'bg-slate-600' : 'bg-white hover:bg-cyan-300'}`}
                 disabled={codeDisabled}>
                 Code
               </button>

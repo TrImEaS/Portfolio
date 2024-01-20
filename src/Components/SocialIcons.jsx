@@ -16,7 +16,8 @@ export default function SocialIcons() {
                 className='flex justify-between items-center w-full text-white px-4' >WhatsApp<FaWhatsapp size={30}></FaWhatsapp>
               </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 
+              bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]'>
               <a 
                 href="https://www.instagram.com/_trimeas_/" 
                 className='flex justify-between items-center w-full text-white px-4' >Instagram<FaInstagram size={30}></FaInstagram>

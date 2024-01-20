@@ -30,6 +30,7 @@ export default function NavLinks({ style }) {
         hover:text-cyan-500 text-slate-50 duration-300`} 
         >Contact
       </NavLink>
+
     </>
   )
 }
