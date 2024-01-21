@@ -2,6 +2,8 @@ import React from 'react'
 import WorkCard from '../Components/WorkCard'
 import LiquidsProject from '../assets/projects/liquids-project.png'
 import OldPortfolioProject from '../assets/projects/old-portfolio.png'
+import { NavLink } from "react-router-dom"
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 export default function Work() {
   return (
@@ -40,7 +42,29 @@ export default function Work() {
                 codeLink={'https://github.com/TrImEaS/First-Portfolio'}
                 workImg={OldPortfolioProject}></WorkCard>
             </article>
-            
+            <div className='flex gap-5 flex-wrap justify-center sm:justify-start'>
+              <NavLink to='/'>
+              <button className='text-gray-50 group dark:text-gray-200 border-2 border-gray-50 dark:border-slate-50 px-5 py-3 
+                sm:my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500 hover:dark:border-cyan-500 duration-300'>
+                Return to Home
+                <span><HiArrowNarrowRight className='group-hover:scale-[1.4] duration-300 ml-3'></HiArrowNarrowRight></span>
+              </button>
+              </NavLink>
+              <NavLink to='/skills'>
+              <button className='text-gray-50 group dark:text-gray-200 border-2 border-gray-50 dark:border-slate-50 px-5 py-3 
+                sm:my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500 hover:dark:border-cyan-500 duration-300'>
+                View Skills
+                <span><HiArrowNarrowRight className='group-hover:scale-[1.4] duration-300 ml-3'></HiArrowNarrowRight></span>
+              </button>
+              </NavLink>
+              <NavLink to='/contact'>
+              <button className='text-gray-50 group dark:text-gray-200 border-2 border-gray-50 dark:border-slate-50 px-5 py-3 
+                sm:my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500 hover:dark:border-cyan-500 duration-300'>
+                Contact me
+                <span><HiArrowNarrowRight className='group-hover:scale-[1.4] duration-300 ml-3'></HiArrowNarrowRight></span>
+              </button>
+              </NavLink>
+            </div>
           </section>
 
         </div>

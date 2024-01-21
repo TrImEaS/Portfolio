@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa'
 export default function SocialIcons() {
   return (
-          <div className='relative lg:flex lg:top-[35%] flex-col left-0 top-[65%]'>
+          <div className='absolute lg:flex lg:top-[35%] flex-col left-0 top-[65%]'>
           <ul>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
               <a 
