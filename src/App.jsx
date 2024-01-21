@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const userThemePreference = localStorage.getItem('theme');
-    global.document.documentElement.classList.add(userThemePreference);
+    document.documentElement.classList.add(userThemePreference);
   }, []);
 
   return (
