@@ -7,8 +7,16 @@ import './App.css'
 function App() {
 
   useEffect(() => {
-    const userThemePreference = localStorage.getItem('theme');
-    document.documentElement.classList.add(userThemePreference);
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const setTheme = (darkModeOn) => {
+      document.documentElement.classList.toggle('dark', darkModeOn)
+      localStorage.setItem('theme', darkModeOn ? 'dark' : 'light')
+    }
+    setTheme(darkModeMediaQuery.matches)
+    darkModeMediaQuery.addEventListener('change', (e) => {
+      setTheme(e.matches);
+    })
+    
   }, []);
 
   return (
