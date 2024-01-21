@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://trimeas.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,8 +10,7 @@
     "preview": "vite preview",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "vite preview --base https://trimeas.github.io/"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",

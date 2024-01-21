@@ -6,7 +6,7 @@ export default function Form () {
         <label className='text-sm mb-2 text-gray-300' htmlFor="name">Name: </label>  
         <input 
           className='bg-transparent  border-transition border-2 p-3 mb-4 border-solid border-[#7cb2f36c] 
-            shadow-md shadow-[#7cb2f36c] rounded text-sm focus:outline-none' 
+            shadow-md shadow-[#7cb2f36c] rounded text-sm focus:outlin\e-none' 
           type="text" 
           id='name' 
           name='name' 
