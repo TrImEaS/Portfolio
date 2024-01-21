@@ -48,9 +48,8 @@
 .content-div:hover {
   background-image: linear-gradient(
     to right,
-    rgba(78, 134, 253, 0.8),
-    rgba(78, 203, 253, 0.8),
-    hsl(242, 74%, 61%)
+    rgba(0, 255, 255, 0.658),
+    #378d86
   )!important
 }
 

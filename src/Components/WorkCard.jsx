@@ -8,7 +8,7 @@ export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLin
         items-center mx-auto content-div'>
         
         <div className='opacity-0 group-hover:opacity-100 text-slate-950 duration-300'>
-          <span className='text-2xl font-bold tracking-wider'>
+          <span className='text-2xl font-bold tracking-wider '>
             {text}
           </span>
           <div className='pt-8 text-center'>
