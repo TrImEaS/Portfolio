@@ -1,5 +1,4 @@
 import React from 'react'
-import Form from '../Components/Form'
  
 export default function Contact() {
 
@@ -10,7 +9,6 @@ export default function Contact() {
         <p className='text-4xl inline border-b-4 border-cyan-300'>Contact</p>
         <p className='py-4 text-gray-300'>// These are the technologies I've worked with - trimeas@hotamil.com</p>
       </header>
-      <Form></Form>
     </div>
   )
 }
