@@ -7,8 +7,8 @@ import { HiArrowNarrowLeft } from 'react-icons/hi'
 
 export default function Work() {
   return (
-      <section name='projects' className='w-full h-full flex flex-col px-8 justify-center items-center my-[150px]'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-ful h-full'>
+      <section name='projects' className='w-full h-full flex flex-col px-8 justify-center items-center'>
+        <div className='max-w-[840px] mx-auto p-4 flex flex-col justify-center w-ful h-full'>
 
           <header className='pb-8'>
             <p className='text-4xl inline border-b-4 dark:text-gray-50 dark:border-cyan-300 border-[#378d86]'>

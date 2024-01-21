@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <div name='home' className='w-full flex flex-col px-8 justify-center items-center h-screen'>
+      <div name='home' className='w-full flex flex-col px-8 justify-center items-center h-full'>
         <div>
           <p className='text-[#378d86] dark:text-cyan-300 text-lg'>
             <strong>Hi, my name is</strong>
@@ -59,6 +59,7 @@ export default function Home() {
           <SocialIcons></SocialIcons>
         </div> 
         <Avatar></Avatar>
+        <div className='h-[100px]'></div>
       </div>
       <About></About>
     </>

@@ -20,8 +20,10 @@ function App() {
   }, []);
 
   return (
-      <main className='flex flex-col items-center bg-[#bcd2d0] dark:bg-slate-900 font-bold text-black dark:text-slate-50 min-h-screen font-[Nunito] min-w-[390px]'>
+      <main className='flex flex-col items-center bg-[#bcd2d0] dark:bg-slate-900 font-bold 
+        text-black dark:text-slate-50 min-h-screen font-[Nunito] min-w-[390px]'>
         <Nav></Nav>
+        <div className='h-[100px]'></div>
         <Routes>
           <Route 
             path='/' 

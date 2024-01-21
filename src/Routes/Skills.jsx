@@ -19,10 +19,10 @@ export default function Skills() {
     {/* Div for provisional container disappearance fix */}
     <div className='sm:hidden h-[80px]'></div>
     
-    <div name='skills' className='w-full h-screen dark:bg-slate-900 '>
+    <div name='skills' className='w-full h-full dark:bg-slate-900 '>
       <section className='max-w-[840px] mx-auto p-4 flex flex-col justify-center w-full h-full px-6'>
         <header>
-          <p className='text-4xl inline border-b-4 dark:text-gray-50 border-[#378d86]'>
+          <p className='text-4xl inline border-b-4 dark:text-gray-50 dark:border-cyan-300 border-[#378d86]'>
             Skills 
           </p>
           <p className='py-4 dark:text-gray-300'>
@@ -107,8 +107,8 @@ export default function Skills() {
                 Return to Home
                 <span><HiArrowNarrowLeft className='group-hover:scale-[1.4] duration-300 ml-3'></HiArrowNarrowLeft></span>
               </button>
-              </NavLink>
-          </div>    
+          </NavLink>
+        </div>    
     </div>
     </>
   )

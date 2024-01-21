@@ -10,7 +10,7 @@ export default function Nav() {
 
   return (
     <>
-    <nav className='z-50 fixed w-full dark:bg-slate-900 bg-[#bcd2d0] flex h-[80px] justify-between items-center px-4'>
+    <nav className='z-50 w-full fixed dark:bg-slate-900 bg-[#bcd2d0] flex h-[80px] justify-between items-center px-4'>
       <div>
         <Logo></Logo>
       </div>
