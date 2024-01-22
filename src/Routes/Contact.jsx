@@ -11,7 +11,7 @@ export default function Contact() {
         className='flex flex-col max-w-[600px] w-full'>
       <div className='pb-8'>
         <p className='text-4xl inline border-b-4 dark:text-gray-50 dark:border-cyan-300 border-[#378d86]'>Contact</p>
-        <p className='py-4'>// These are the technologies I've worked with - trimeas@hotamil.com</p>
+        <p className='py-4'>// Submit the form below or shoot me an email - trimeas@hotamil.com</p>
       </div>
       <input className='dark:bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name'/>
       <input className='my-4 p-2 dark:bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />

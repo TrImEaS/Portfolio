@@ -15,7 +15,7 @@ export default function About() {
         <div className="max-w-[840px] w-full grid sm:grid-cols-2 gap-8">
           <div className="sm:text-pretty text-4xl font-bold">
             <p className="dark:text-gray-50">My name is <span className="text-[#378d86] dark:text-cyan-300">Thomas </span> 
-            but some friends call me <strong className="text-[#378d86] dark:text-cyan-300">Trimeas</strong>, which is basically my gaming nickname 😁.</p>
+            but some friends call me <strong className="text-[#378d86] dark:text-cyan-300">Trimeas</strong>😁.</p>
           </div>
           <div className="text-prettyfont-bold dark:text-gray-50">
             <p className="mb-4">
