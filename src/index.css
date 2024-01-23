@@ -63,3 +63,7 @@
 .mysqlLogo:hover { filter: drop-shadow(0 0 2em #61dafbaa) }
 .javaLogo:hover { filter: drop-shadow(0 0 2em #9a8af7) }
 .tailwindLogo:hover { filter: drop-shadow(0 0 2em #48d7ff) }
+
+nav .isActive {
+  color: #67EEF9 !important
+}

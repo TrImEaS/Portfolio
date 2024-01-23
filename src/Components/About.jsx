@@ -14,12 +14,12 @@ export default function About() {
         </div>
         <div className="max-w-[840px] w-full grid sm:grid-cols-2 gap-8">
           <div className="sm:text-pretty text-4xl font-bold">
-            <p className="dark:text-gray-50">My name is <span className="text-[#378d86] dark:text-cyan-300">Thomas </span> 
-            but some friends call me <strong className="text-[#378d86] dark:text-cyan-300">Trimeas</strong>😁.</p>
+            <p className="dark:text-gray-50">Hi, my name is <span className="text-[#378d86] dark:text-cyan-300">Thomas</span>, a passionate developer, 
+             currently a <span className="text-[#378d86] dark:text-cyan-300">Full stack developer and System manager</span>.</p>
           </div>
           <div className="text-prettyfont-bold dark:text-gray-50">
             <p className="mb-4">
-            I initially started studying accounting, but I've always been interested in programming. Since I was 4 years old, I've had a computer, and <strong className="text-[#378d86] dark:text-cyan-300">
+             I initially started studying accounting, but I've always been interested in programming. Since I was 4 years old, I've had a computer, and <strong className="text-[#378d86] dark:text-cyan-300">
               English and coding have always fascinated me</strong>. 
               I used to think it was extremely difficult, reserved for a select few, and would be impossible for me.
                Until one day, I did some research and enrolled in a <strong className="text-[#378d86] dark:text-cyan-300">computer science degree</strong>.

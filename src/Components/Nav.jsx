@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import NavLinks from './NavLinks'
 import Logo from "./Logo"
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -26,7 +25,10 @@ export default function Nav() {
       </div>
 
       {/* Mobile Menu */}
-      <ul className={!nav ? 'hidden' : 'absolute text-slate-50 bg-slate-500 dark:bg-slate-700 top-0 left-0 w-full h-screen flex flex-col justify-center items-center z-10'}>
+      <ul className={
+        !nav 
+          ? 'hidden' 
+          : 'absolute text-slate-50 bg-slate-500 dark:bg-slate-700 top-0 left-0 w-full h-screen flex flex-col justify-center items-center z-10'}>
         <NavLinks style={'py-6 text-4xl'}></NavLinks>
       </ul> 
     </nav>
