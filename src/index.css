@@ -39,17 +39,16 @@
 }
 
 .content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%; /* ajusta la altura según sea necesario */
+  background-size: cover; /* ajusta la imagen para cubrir todo el contenedor */
   background-position: center;
-  height: 250px;
 }
  
 .content-div:hover {
   background-image: linear-gradient(
     to right,
-    rgba(0, 255, 255, 0.658),
-    #378d86
+    #0F172A,
+    #083a9e
   )!important
 }
 
@@ -61,7 +60,7 @@
 .nodeLogo:hover { filter: drop-shadow(0 0 2em #61fb82aa) }
 .githubLogo:hover { filter: drop-shadow(0 0 2em #e9e9e9aa) }
 .mysqlLogo:hover { filter: drop-shadow(0 0 2em #61dafbaa) }
-.javaLogo:hover { filter: drop-shadow(0 0 2em #9a8af7) }
+.javaLogo:hover { filter: drop-shadow(0 0 25px white) }
 .tailwindLogo:hover { filter: drop-shadow(0 0 2em #48d7ff) }
 
 nav .isActive {

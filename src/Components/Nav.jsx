@@ -8,10 +8,9 @@ export default function Nav() {
   const handleClick = () => setNav(!nav)
 
   return (
-    <>
-    <nav className='z-50 w-full fixed dark:bg-slate-900 bg-[#bcd2d0] flex h-[80px] justify-between items-center px-4'>
+    <nav className='z-50 w-full dark:bg-slate-900 bg-[#bcd2d0] flex h-[80px] justify-between items-center px-4'>
       <div>
-        <Logo></Logo>
+        <Logo/>
       </div>
 
       {/* Menu */}
@@ -20,18 +19,29 @@ export default function Nav() {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-20'>
-        {!nav ? <FaBars></FaBars> : <FaTimes></FaTimes>}
+      <div
+        onClick={handleClick} 
+        className='md:hidden z-20'>
+        {
+        !nav 
+          ? <FaBars/>
+          : <FaTimes/>
+        }
       </div>
 
       {/* Mobile Menu */}
-      <ul className={
-        !nav 
-          ? 'hidden' 
-          : 'absolute text-slate-50 bg-slate-500 dark:bg-slate-700 top-0 left-0 w-full h-screen flex flex-col justify-center items-center z-10'}>
-        <NavLinks style={'py-6 text-4xl'}></NavLinks>
+      <ul className=
+        {
+          !nav 
+            ? 'hidden' 
+            : 'absolute text-slate-50 bg-slate-500 dark:bg-slate-700 top-0 left-0 w-full h-screen flex flex-col justify-center items-center z-10'
+        }>
+        <div 
+          className='flex flex-col text-5xl gap-y-7'
+          onClick={handleClick}>
+          <NavLinks/>
+        </div>
       </ul> 
     </nav>
-    </>
   )
 }

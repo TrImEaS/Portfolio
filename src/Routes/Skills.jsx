@@ -16,10 +16,8 @@ export default function Skills() {
 
   return (
     <>
-    {/* Div for provisional container disappearance fix */}
-    <div className='sm:hidden h-[80px]'></div>
-    
-    <div name='skills' className='w-full h-full dark:bg-slate-900 '>
+    {/* Div for provisional container disappearance fix */}    
+    <div name='skills' className='flex flex-col gap-y-20 w-4/5 h-full dark:bg-slate-900 '>
       <section className='max-w-[840px] mx-auto p-4 flex flex-col justify-center w-full h-full px-6'>
         <header>
           <p className='text-4xl inline border-b-4 dark:text-gray-50 dark:border-cyan-300 border-[#378d86]'>
@@ -31,43 +29,43 @@ export default function Skills() {
         </header>
 
         <div className='w-full grid grid-cols-2  sm:grid-cols-4 gap-10 gap-y-10 text-center py-8 dark:text-gray-300'>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='htmlLogo w-20 mx-auto' src={HTML} alt="HTML icon" />
             <span>HTML</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='cssLogo w-20 mx-auto' src={CSS} alt="CSS icon" />
             <span>CSS</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='jsLogo w-20 mx-auto' src={JS} alt="JavaScript icon" />
             <span>JAVASCRIPT</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='nodeLogo w-20 mx-auto' src={Node} alt="Node icon" />
             <span>NODE JS</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='githubLogo w-20 mx-auto' src={GitHub} alt="GitHub icon" />
             <span>GITHUB</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='mysqlLogo w-20 mx-auto' src={SQL} alt="SLQ icon" />
             <span>MYSQL</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='cLogo w-20 mx-auto' src={C} alt="C icon" />
             <span>C</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
             <img className='javaLogo w-20 mx-auto' src={Java} alt="Java icon" />
             <span>JAVA</span>
           </article>
-          <article className='flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500 sm:col-span-2'>
+          <article className='flex flex-col gap-3 hover:scale-110 duration-500 sm:col-span-2'>
             <img className='reactLogo w-20 mx-auto' src={ReactImg} alt="React icon" />
             <span>REACT</span>
           </article>
-          <article className='group flex flex-col gap-3 dark:shadow-md shadow-[#040c166c] hover:scale-110 duration-500 sm:col-span-2 group'>
+          <article className='group flex flex-col gap-3 hover:scale-110 duration-500 sm:col-span-2 group'>
             <img className='tailwindLogo w-20 mx-auto' src={Tailwind} alt="TailWind icon" />
             <span>TAILWIND</span>
           </article>
