@@ -12,7 +12,7 @@ export default function Home() {
   return (
       <section name='home' className='relative w-4/5 flex flex-col p-8 justify-center items-center h-full gap-y-20'>
         <article className='flex flex-col w-full items-center'>
-          <div>
+          <div className='flex flex-col gap-y-2'>
             <p className='text-[#378d86] dark:text-cyan-300 text-lg'>
               <strong>Hi, my name is</strong>
             </p>
@@ -30,7 +30,7 @@ export default function Home() {
               Currently, i'm focused on building <strong className='text-[#378d86] dark:text-cyan-300'>responsive full-stack web application and SPA</strong>.
             </p>
           </div>
-          <div className='flex gap-5 flex-wrap justify-center'>
+          <div className='flex gap-5 pt-20 flex-wrap justify-center'>
             <NavLink to='/work'>
             <button className='group sm:my-2 flex items-center dark:text-gray-200 border-2 border-black dark:border-slate-50 px-6 py-3 
               hover:bg-[#378d86] dark:hover:bg-cyan-500 hover:border-[#378d86] hover:dark:border-cyan-500 duration-300'>

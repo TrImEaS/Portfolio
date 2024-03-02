@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div name='about' className="flex justify-center items-center w-full h-full px-24 py-60 bg-[#bcd2d0] dark:bg-slate-900">
+    <div name='about' className="flex justify-center items-center w-full h-full max-md:px-0 px-24 py-60 bg-[#bcd2d0] dark:bg-slate-900">
       <div className="flex flex-col justify-center items-center w-full h-full px-3 gap-y-10">
         <div className="sm:text-right pb-10">
           <p className="text-4xl font-bold inline border-b-4 dark:text-gray-50 border-[#378d86] dark:border-cyan-300">
@@ -11,8 +11,10 @@ export default function About() {
         </div>
         <div className="flex flex-col gap-y-10 w-full">
           <div className="sm:text-pretty text-4xl font-bold">
-            <p className="dark:text-gray-50">Hi, my name is <span className="text-[#378d86] dark:text-cyan-300">Thomas</span>, a passionate developer, 
-             currently a <span className="text-[#378d86] dark:text-cyan-300">Full stack developer and System manager</span>.</p>
+            <p className="dark:text-gray-50">
+              Hi, my name is <span className="text-[#378d86] dark:text-cyan-300">Thomas</span>, a passionate developer, 
+             currently a <span className="text-[#378d86] dark:text-cyan-300">Full stack developer and System manager</span>.
+            </p>
           </div>
           <div className="text-prettyfont-bold dark:text-gray-50 w-full">
             <p className="mb-4">
