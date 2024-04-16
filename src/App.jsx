@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import Nav from './Components/Nav'
 import { Home, Error, Work, Skills, Contact } from './Routes/Routes'
+import SocialIcons from './Components/SocialIcons';
 
 export default function App() {
 
@@ -23,8 +24,8 @@ export default function App() {
 
   return (
     <main className='flex flex-col items-center bg-[#bcd2d0] dark:bg-slate-900 font-bold 
-      text-black dark:text-slate-50 min-h-screen h-full font-[Nunito]'>
-      <Nav></Nav>
+      text-black dark:text-slate-50 min-h-screen h-full font-[Nunito] relative'>
+      <Nav/>
       <Routes>
         <Route 
           path='/' 
@@ -47,6 +48,7 @@ export default function App() {
           element={<Error/>}>
         </Route>
       </Routes>
+      <SocialIcons/>
     </main>
   )
 }
