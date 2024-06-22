@@ -1,0 +1,90 @@
+{
+  "title": "Thomas Rojas - Portfolio Full Stack Developer",
+  "nav": ["Home", "Skills", "Work", "Contact"],
+
+  "home": {
+    "welcome": [
+      "Hi, my name is", 
+      "Thomas Rojas", 
+      "I'm a Full Stack Developer", 
+      "I'm a Full Stack Developer", 
+      "specializing in building exceptional digital experiences.",
+      "Currently, i'm focused on building",
+      "responsive full-stack web application and SPA."
+    ],
+    "buttons": [
+      "View work",
+      "About me",
+      "View skills"
+    ]
+  },
+
+  "about": {
+    "title": "About me",
+    "sub_title": [
+      "Hi, my name is",
+      "Thomas",
+      ", an passionate developer, currently a ",
+      "Full stack developer and System manager"
+    ],
+    "content": [
+      "I initially started studying accounting, but I've always been interested in programming. Since I was 4 years old, I've had a computer, and",
+      "English and coding have always fascinated me",
+      "I used to think it was extremely difficult, reserved for a select few, and would be impossible for me. Until one day, I did some research and enrolled in a ",
+      "computer science degree",
+      "That's when I realized it wasn't as complicated as I had thought. I kept learning, ",
+      "delving into Java with Junit, MySQL for databases, and then my favorite language JavaScript.",
+      "Once I got to know it, I didn't stop—venturing into ",
+      "React, Node with Express, Sequelize and others technologies.",
+      " Essentially, I wanted to master JS. Nowadays, I could say there's still some way to go, but the important thing is that I learned that anything one sets their mind to can be achieved, just like in programming—",
+      " anything you can imagine can be coded."
+    ]
+  },
+
+  "skills":{
+    "title": "Skills",
+    "sub_title": "// These are the technologies I've worked with",
+    "button": "Return to Home"
+  },
+
+  "study":{
+    "title": "Study",
+    "content": [
+      "The foundation of my programming knowledge was primarily laid in university, where ",
+      "I learned data structures, sequential programming with C, and object-oriented programming with Java.",
+      "The other part of my knowledge was acquired ",
+      "through self-study,",
+      " as I had a keen interest in web development and decided to get a head start.",
+      "I began with tutorials on YouTube and websites like W3Schools and Stack Overflow, among others. Like everyone else at the beginning, ",
+      "I delved into HTML, CSS, and JavaScript.",
+      "This phase took some time, and I must clarify that due to the situation in my country, which doesn't provide much support, and the demands of my previous job, which consumed a significant amount of my time, I faced delays in my progress. Nevertheless, I persevered and continued with various frameworks. Even today, ",
+      " I maintain a good pace, staying updated with the latest technologies and gaining experience in best practices."
+    ]
+  },
+
+  "work":{
+    "title": "Work",
+    "sub_title": "// Check out some of my recent work",
+    "buttons": ["Demo", "Code", "Return to Home"],
+    "proyect_1":{
+      "title": "'QR Gen (Token verification for billing)'",
+      "description": "This project is a simple QR generator designed to be added to invoices that include goods to be shipped by a logistics company. Its purpose is to prevent fraud such as unauthorized reprinting of invoices or errors like double printing. From the administration side, a simple form can be filled out, and if the data is valid, a QR code is generated. Additionally, they can view all the billing data of the previously generated QR codes. From logistics, they scan the QR code added to the invoice, which directs them to a page showing a verification code linked to the invoice number, customer, or company. They must then manually enter this code on the invoice."
+    },
+    "proyect_2":{
+      "title": "'Technology Line (e-commerce)'",
+      "description": "This is an e-commerce that I am doing for the company and they are currently using it and selling it there. At the moment it is still in development but this first version has already started to be used. It is made with React, React-router-dom, tailwind, deployed on GoDaddy. Coming soon, backend to perform Admin-Auth and other features"
+    },
+    "proyect_3":{
+      "title": "'LiquidS (Payroll web-app)'",
+      "description": "This is a project that I started for the administration sector of my company which focuses on creating salary receipts, with full control (CRUD) by the admin(s). The front is simply made with React, React-router-dom and tailwind. The backend is made with Node, Express, MVC, and soon a database in Turso. This project is in development..."
+    }
+  },
+
+  "contact":{
+    "title": "Contact",
+    "subtitle": "// Submit the form below or shoot me an email - trimeas@hotamil.com",
+    "inputs_placeholders": ["Full name", "Email"],
+    "button": "Let's Collaborate"
+  }
+
+}

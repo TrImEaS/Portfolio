@@ -1,6 +1,27 @@
-import React from "react";
+import { useEffect, useState } from 'react'
+import content_en from "../languages/content_en.json"
+import content_es from "../languages/content_es.json"
 
 export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLink, workImg, text}) {
+  const [lang, setLang] = useState(null)
+  const [load, setLoad] = useState(true)
+
+  useEffect(()=> {
+    const actualLang = navigator.language || navigator.userLanguage 
+
+    if(actualLang.includes('es')){ 
+      setLang(content_es)
+      setLoad(false)
+    }
+    else {
+      setLang(content_en)
+      setLoad(false)
+    }
+  }, [])
+
+  if(load){
+    return <div>Loading...</div>
+  }
 
   return(
       <section 
@@ -19,7 +40,7 @@ export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLin
                 className={`text-center rounded-lg px-4 py-3 m-2 text-gray-700 font-bold text-lg 
                 ${demoDisabled ? 'bg-slate-600' : 'bg-white hover:bg-cyan-300'}`}
                 disabled={demoDisabled}>
-                Demo
+                {lang.work.buttons[0]}
               </button>
             </a>
             
@@ -27,7 +48,7 @@ export default function WorkCard({ demoDisabled, codeDisabled, demoLink, codeLin
               <button className={`hover:bg-cyan-300 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg
                 ${codeDisabled ? 'bg-slate-600' : 'bg-white hover:bg-cyan-300'}`}
                 disabled={codeDisabled}>
-                Code
+                {lang.work.buttons[1]}
               </button>
             </a>
           </div>

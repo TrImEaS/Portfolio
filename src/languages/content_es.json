@@ -1,0 +1,89 @@
+{
+  "title": "Thomas Rojas - Portafolio Full Stack Developer",
+  "nav": ["Home", "Habilidades", "Trabajo", "Contacto"],
+
+  "home": {
+    "welcome": [
+      "Hola, mi nombre es", 
+      "Thomas Rojas", 
+      "Desarrollador Full stack", 
+      "Soy desarrollador Full stack", 
+      "especializado en crear experiencias digitales excepcionales.",
+      "Actualmente, estoy enfocado en realizar",
+      "aplicaciones web responsivas y SPA"
+    ],
+    "buttons": [
+      "Ver trabajos",
+      "Sobre mi",
+      "Ver habilidades"
+    ]
+  },
+
+  "about": {
+    "title": "Sobre mi",
+    "sub_title": [
+      "Hola, mi nombre es",
+      "Thomas",
+      ", un desarrollador apasionado y actualmente ",
+      "Desarrollador full stack y encargado en sistemas"
+    ],
+    "content": [
+      "Incialmente comence estudiando 'Contador Publico', pero siempre me ha interesado la programación. Desde los 4 años tengo ordenador y",
+      "el inglés y la codificación siempre me han fascinado.",
+      "Siempre pense que era extremadamente difícil, reservado para unos pocos elegidos, y que sería imposible para mí, hasta que un día, investigué un poco y me inscribí en la facultad para estudiar ",
+      "'Licenciatura en Informatica'",
+      "Fue entonces cuando me di cuenta de que no era tan complicado como pensaba. Seguí aprendiendo ",
+      "profundizando en C, Java, MySQL, entre otros. Hasta que conoci mi lenguaje favorito 'JavaScript'.",
+      "Una vez que empece a codear en JavaScript, no pare de aprender, segui con ",
+      "React, Node con Express, Sequelize, Python, entre otras tecnologías. ",
+      "Esencialmente quería dominar JS. Hoy en día, podría decir que aún queda camino por recorrer, pero lo importante es que aprendí que todo lo que uno se proponga se puede lograr, y mas en programacion que basicamente ",
+      "todo lo que uno imagina se puede programar, no hay limites."
+    ]
+  },
+
+  "skills":{
+    "title": "Habilidades",
+    "sub_title": "// Estas son algunas de las tecnologias que utilizo",
+    "button": "Volver a Home"
+  },
+
+  "study":{
+    "title": "Formacion academica",
+    "content": [
+      "La base de mis conocimientos de programación comenzo principalmente en la universidad, en donde ",
+      "aprendí estructuras de datos, programación secuencial con C y programación orientada a objetos con Java/Python.",
+      "La otra parte de mis conocimientos los adquirí",
+      "de manera autodidacta. ",
+      "Como tenía un gran interés en el desarrollo web y decidí comenzar a tomar ventaja, ya que sentia que en la facultad aprendia muy poco y en mucho tiempo... ",
+      "Entonces decidi comenzar a ver tutoriales en YouTube y sitios web como W3Schools y Stack Overflow, entre otros. Como todos al principio ",
+      "profundicé en HTML, CSS y JavaScript.",
+      "Esta fase tomó algo de tiempo, y debo aclarar que debido a la situación de mi país, que no brinda mucho apoyo, y las exigencias de mi trabajo anterior, que consumía una cantidad importante de mi tiempo, enfrenté retrasos en el estudio. Sin embargo, perseveré y continué con varios marcos incluso hoy ",
+      "mantengo un buen ritmo, trato de actualizarme con las últimas tecnologías, nuevas caracteristicas de lenguajes y siempre realizando buenas prácticas."
+    ]
+  },
+
+  "work":{
+    "title": "Trabajos",
+    "sub_title": "// Mira algunos de mis trabajos recientes",
+    "buttons": ["Demo", "Codigo", "Volver a Home"],
+    "proyect_1":{
+      "title": "'QR Gen (Verificacion via Token para facturacion)'",
+      "description": "Este proyecto es un generador de QR simple diseñado para agregarse a facturas que incluyen bienes que serán enviados por una empresa de logística. Su propósito es prevenir fraudes como la reimpresión no autorizada de facturas o errores como la doble impresión. Desde el lado de administración se puede completar un formulario simple y si los datos son válidos se genera un código QR. Además, podrán visualizar todos los datos de facturación de los códigos QR generados previamente. Desde logística escanean el código QR agregado a la factura, que los dirige a una página que muestra un código de verificación vinculado al número de factura, cliente o empresa. Luego deben ingresar manualmente este código en la factura."
+    },
+    "proyect_2":{
+      "title": "'Technology Line (e-commerce)'",
+      "description": "Este es un comercio electrónico que estoy haciendo para la empresa y actualmente lo están usando y vendiendo allí. De momento todavía está en desarrollo pero ya se ha empezado a utilizar esta primera versión. Está hecho con React, React-router-dom, tailwind, implementado en GoDaddy. Próximamente, backend para realizar Admin-Auth y otras funciones"
+    },
+    "proyect_3":{
+      "title": "'LiquidS (App web de liquidacion de sueldos)'",
+      "description": "Este es un proyecto que inicié para el sector administrativo de mi empresa el cual se enfoca en la creación de recibos de sueldo, con control total (CRUD) por parte del(los) administrador(es). El frente está hecho simplemente con React, React-router-dom y tailwind. El backend está hecho con Node, Express, MVC y próximamente una base de datos en Turso. Este proyecto está en desarrollo..."
+    }
+  },
+
+  "contact":{
+    "title": "Contacto",
+    "subtitle": "// Completa el siguiente formulario o enviame un mail a: trimeas@hotamil.com",
+    "inputs_placeholders": ["Nombre completo", "Email"],
+    "button": "Enviar"
+  }
+}
