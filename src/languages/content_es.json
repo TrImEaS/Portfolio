@@ -77,6 +77,10 @@
     "proyect_3":{
       "title": "'LiquidS (App web de liquidacion de sueldos)'",
       "description": "Este es un proyecto que inicié para el sector administrativo de mi empresa el cual se enfoca en la creación de recibos de sueldo, con control total (CRUD) por parte del(los) administrador(es). El frente está hecho simplemente con React, React-router-dom y tailwind. El backend está hecho con Node, Express, MVC y próximamente una base de datos en Turso. Este proyecto está en desarrollo..."
+    },
+    "proyect_4":{
+      "title": "'Menu Card (Demos de Cartas Digitales)'",
+      "description": "Son simples cartas digitales destinadas a restaurantes"
     }
   },
 

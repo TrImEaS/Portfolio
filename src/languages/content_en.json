@@ -77,6 +77,10 @@
     "proyect_3":{
       "title": "'LiquidS (Payroll web-app)'",
       "description": "This is a project that I started for the administration sector of my company which focuses on creating salary receipts, with full control (CRUD) by the admin(s). The front is simply made with React, React-router-dom and tailwind. The backend is made with Node, Express, MVC, and soon a database in Turso. This project is in development..."
+    },
+    "proyect_4":{
+      "title": "'Menu Card (Digital Card Demo)'",
+      "description": "An simply demos for restaurant cards (digital)"
     }
   },
 

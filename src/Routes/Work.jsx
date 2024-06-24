@@ -1,12 +1,13 @@
 import WorkCard from '../Components/WorkCard'
 import LiquidsProject from '../assets/projects/liquids.png'
 import QRGen from '../assets/projects/qrgen.png'
+import menu_card from '../assets/projects/menu-card.png'
 import technologylinePage from '../assets/projects/technologylinepage.png'
+import content_en from "../languages/content_en.json"
+import content_es from "../languages/content_es.json"
 import { NavLink } from "react-router-dom"
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { useEffect, useState } from 'react'
-import content_en from "../languages/content_en.json"
-import content_es from "../languages/content_es.json"
 
 export default function Work() {
   const [lang, setLang] = useState(null)
@@ -44,7 +45,50 @@ export default function Work() {
           </header>
 
           <section className='flex flex-wrap gap-10 items-center justify-between w-full'>
-          <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
+            {/* Technology Line - Ecommerce */}
+            <article className='grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
+              <aside>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                  {lang.work.proyect_2.title}
+                </p>
+                <p className='py-6 px-4 text-pretty'>
+                  {lang.work.proyect_2.description}
+                </p>
+              </aside>
+
+              <div className='min-h-[300px]'>
+                <WorkCard 
+                  text={'Technology Line - Ecommerce'}
+                  demoLink={'https://technologyline.com.ar/'}
+                  codeLink={'https://github.com/TrImEaS/Liquids-Work-Project'}
+                  workImg={technologylinePage}
+                ></WorkCard>
+              </div>
+            </article>
+            
+            {/* Menu_Card */}
+            <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] w-full border-black dark:border-white p-2 rounded-lg'>
+              <aside>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                  {lang.work.proyect_4.title}
+                </p>
+                <p className='py-6 px-4 text-pretty'>
+                  {lang.work.proyect_4.description}
+                </p>
+              </aside>
+
+              <div className='min-h-[300px]'>
+                <WorkCard
+                  text={'Menu Card'}
+                  demoLink={'https://menu-card-kappa.vercel.app/'} 
+                  codeLink={'https://github.com/TrImEaS-Work/Menu-Card'} 
+                  workImg={menu_card}
+                ></WorkCard>
+              </div>
+            </article>
+
+            {/* QR Gen */}
+            <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_1.title}
@@ -53,6 +97,7 @@ export default function Work() {
                   {lang.work.proyect_1.description}
                 </p>
               </aside>
+
               <div className='min-h-[300px]'>
                 <WorkCard
                   text={'QR Gen project'}
@@ -63,25 +108,7 @@ export default function Work() {
               </div>
             </article>
 
-            <article className='grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
-              <aside>
-                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
-                  {lang.work.proyect_2.title}
-                </p>
-                <p className='py-6 px-4 text-pretty'>
-                  {lang.work.proyect_2.description}
-                </p>
-              </aside>
-              <div className='min-h-[300px]'>
-                <WorkCard 
-                  text={'Old porfolio project'}
-                  demoLink={'https://technologyline.com.ar/'}
-                  codeLink={'https://github.com/TrImEaS/Liquids-Work-Project'}
-                  workImg={technologylinePage}
-                ></WorkCard>
-              </div>
-            </article>
-
+            {/* LiquidS */}
             <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
@@ -91,6 +118,7 @@ export default function Work() {
                   {lang.work.proyect_3.description}
                 </p>
               </aside>
+
               <div className='min-h-[300px]'>
                 <WorkCard
                   text={'LiquidS project'}
