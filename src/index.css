@@ -41,7 +41,6 @@
 .content-div {
   width: 100%; /* ajusta la altura según sea necesario */
   background-size: cover; /* ajusta la imagen para cubrir todo el contenedor */
-  background-position: center;
 }
  
 .content-div:hover {

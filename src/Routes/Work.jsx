@@ -44,9 +44,9 @@ export default function Work() {
             </p>
           </header>
 
-          <section className='flex flex-wrap gap-10 items-center justify-between w-full'>
+          <section className='flex flex-col gap-10 items-center justify-between w-full'>
             {/* Technology Line - Ecommerce */}
-            <article className='grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_2.title}
@@ -67,7 +67,7 @@ export default function Work() {
             </article>
             
             {/* Menu_Card */}
-            <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] w-full border-black dark:border-white p-2 rounded-lg'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] w-full border-black dark:border-white p-2 rounded-lg'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_4.title}
@@ -88,7 +88,7 @@ export default function Work() {
             </article>
 
             {/* QR Gen */}
-            <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_1.title}
@@ -109,7 +109,7 @@ export default function Work() {
             </article>
 
             {/* LiquidS */}
-            <article className='grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_3.title}
