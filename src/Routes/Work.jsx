@@ -83,7 +83,7 @@ export default function Work() {
                 <WorkCard 
                   text={'GestionS'}
                   demoDisabled={'disabled'}
-                  codeLink={'https://github.com/TrImEaS/files'}
+                  codeDisabled={'disabled'}
                   workImg={gestions}
                 ></WorkCard>
               </div>
