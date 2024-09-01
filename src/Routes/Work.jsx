@@ -3,6 +3,8 @@ import LiquidsProject from '../assets/projects/liquids.png'
 import QRGen from '../assets/projects/qrgen.png'
 import menu_card from '../assets/projects/menu-card.png'
 import technologylinePage from '../assets/projects/technologylinepage.png'
+import gestions from '../assets/projects/gestions.png'
+import flyer from '../assets/projects/flyer.png'
 import content_en from "../languages/content_en.json"
 import content_es from "../languages/content_es.json"
 import { NavLink } from "react-router-dom"
@@ -62,6 +64,48 @@ export default function Work() {
                   demoLink={'https://technologyline.com.ar/'}
                   codeLink={'https://github.com/TrImEaS/Liquids-Work-Project'}
                   workImg={technologylinePage}
+                ></WorkCard>
+              </div>
+            </article>
+
+            {/* GestionS */}
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
+              <aside>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                  {lang.work.proyect_5.title}
+                </p>
+                <p className='py-6 px-4 text-pretty'>
+                  {lang.work.proyect_5.description}
+                </p>
+              </aside>
+
+              <div className='min-h-[300px]'>
+                <WorkCard 
+                  text={'GestionS'}
+                  demoDisabled={'disabled'}
+                  codeLink={'https://github.com/TrImEaS/files'}
+                  workImg={gestions}
+                ></WorkCard>
+              </div>
+            </article>
+
+            {/* Flyer (GestionS) */}
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
+              <aside>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                  {lang.work.proyect_6.title}
+                </p>
+                <p className='py-6 px-4 text-pretty'>
+                  {lang.work.proyect_6.description}
+                </p>
+              </aside>
+
+              <div className='min-h-[300px]'>
+                <WorkCard 
+                  text={'Flyer (GestionS)'}
+                  demoLink={'https://outletgolosinas.com.ar/'}
+                  codeLink={'https://github.com/TrImEaS/GestionS'}
+                  workImg={flyer}
                 ></WorkCard>
               </div>
             </article>

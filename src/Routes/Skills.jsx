@@ -8,6 +8,8 @@ import Tailwind from '../assets/tailwind.png'
 import SQL from '../assets/sql.png'
 import C from '../assets/c.png'
 import Java from '../assets/java.png'
+import NextJs from '../assets/nextjsIcon.svg'
+import PHP from '../assets/phpLogo.svg'
 import { NavLink } from "react-router-dom"
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { useEffect, useState } from 'react'
@@ -49,7 +51,7 @@ export default function Skills() {
             </p>
           </header>
 
-          <div className='w-full grid grid-cols-2  sm:grid-cols-4 gap-10 gap-y-10 text-center py-8 dark:text-gray-300'>
+          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-10 gap-y-10 text-center py-8 dark:text-gray-300'>
             <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
               <img className='htmlLogo w-20 mx-auto' src={HTML} alt="HTML icon" />
               <span>HTML</span>
@@ -82,13 +84,21 @@ export default function Skills() {
               <img className='javaLogo w-20 mx-auto' src={Java} alt="Java icon" />
               <span>JAVA</span>
             </article>
-            <article className='flex flex-col gap-3 hover:scale-110 duration-500 sm:col-span-2'>
+            <article className='flex flex-col gap-3 hover:scale-110 duration-500'>
               <img className='reactLogo w-20 mx-auto' src={ReactImg} alt="React icon" />
               <span>REACT</span>
             </article>
-            <article className='group flex flex-col gap-3 hover:scale-110 duration-500 sm:col-span-2 group'>
+            <article className='group flex flex-col gap-3 hover:scale-110 duration-500 group'>
               <img className='tailwindLogo w-20 mx-auto' src={Tailwind} alt="TailWind icon" />
               <span>TAILWIND</span>
+            </article>
+            <article className='group flex flex-col gap-3 hover:scale-110 duration-500 group'>
+              <img className='nextjsLogo w-20 mx-auto' src={NextJs} alt="Next.js icon" />
+              <span>NEXT JS</span>
+            </article>
+            <article className='group flex flex-col gap-3 hover:scale-110 duration-500 group'>
+              <img className='phpLogo w-20 mx-auto' src={PHP} alt="Next.js icon" />
+              <span>PHP</span>
             </article>
           </div>
         </section>

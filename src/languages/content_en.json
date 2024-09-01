@@ -72,7 +72,7 @@
     },
     "proyect_2":{
       "title": "'Technology Line (e-commerce)'",
-      "description": "This is an e-commerce that I am doing for the company and they are currently using it and selling it there. At the moment it is still in development but this first version has already started to be used. It is made with React, React-router-dom, tailwind, deployed on GoDaddy. Coming soon, backend to perform Admin-Auth and other features"
+      "description": "This is an e-commerce that I am doing for the company and they are currently using it and selling it there. It is made with React, React-router-dom, tailwind, deployed on GoDaddy. Coming soon, backend to perform Admin-Auth and other features"
     },
     "proyect_3":{
       "title": "'LiquidS (Payroll web-app)'",
@@ -81,6 +81,14 @@
     "proyect_4":{
       "title": "'Menu Card (Digital Card Demo)'",
       "description": "An simply demos for restaurant cards (digital)"
+    },
+    "proyect_5":{
+      "title": "'GestionS (ERP)'",
+      "description": " In this app, I handled the backend (with PHP), the frontend (React.js), and some corrections or additions to the database. It is currently in version 1.0, and we are continuing to work on it. This is a freelance project designed for a company with over 10 branches, and it is currently expanding."
+    },
+    "proyect_6":{
+      "title": "'Flyer (GestionS)'",
+      "description": "A simple flyer accompanied by its admin-page which allows you to change banners, products, title, etc."
     }
   },
 
