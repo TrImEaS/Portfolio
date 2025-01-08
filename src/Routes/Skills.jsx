@@ -103,7 +103,7 @@ export default function Skills() {
           </div>
         </section>
 
-        <section className='mx-auto flex flex-col justify-center items-center w-full h-full dark:bg-slate-900 
+        {/* <section className='mx-auto flex flex-col justify-center items-center w-full h-full dark:bg-slate-900 
         bg-[#bcd2d0] py-[200px]'>
             <article className='max-w-[840px] w-full h-full px-6'>
               <header>
@@ -128,16 +128,16 @@ export default function Skills() {
                 </p>
               </header>
             </article>
-          </section>  
-          <div className='flex gap-5 flex-wrap w-full justify-center dark:bg-slate-900 bg-[#bcd2d0] pb-9'>
-            <NavLink to='/'>
-              <button className='group sm:my-2 flex items-center dark:text-gray-200 border-2 border-black dark:border-slate-50 px-6 py-3 
-              hover:bg-[#378d86] dark:hover:bg-cyan-500 hover:border-[#378d86] hover:dark:border-cyan-500 duration-300'>
-                {lang.skills.button}
-                <span><HiArrowNarrowLeft className='group-hover:scale-[1.4] duration-300 ml-3'></HiArrowNarrowLeft></span>
-              </button>
-            </NavLink>
-          </div>    
+        </section>   */}
+        <div className='flex gap-5 flex-wrap w-full justify-center dark:bg-slate-900 bg-[#bcd2d0] pb-9'>
+          <NavLink to='/'>
+            <button className='group sm:my-2 flex items-center dark:text-gray-200 border-2 border-black dark:border-slate-50 px-6 py-3 
+            hover:bg-[#378d86] dark:hover:bg-cyan-500 hover:border-[#378d86] hover:dark:border-cyan-500 duration-300'>
+              {lang.skills.button}
+              <span><HiArrowNarrowLeft className='group-hover:scale-[1.4] duration-300 ml-3'></HiArrowNarrowLeft></span>
+            </button>
+          </NavLink>
+        </div>    
       </div>
     </>
   )

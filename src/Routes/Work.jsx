@@ -41,40 +41,19 @@ export default function Work() {
             <p className='text-4xl inline border-b-4 dark:text-gray-50 dark:border-cyan-300 border-[#378d86]'>
               {lang.work.title}
             </p>
-            <p className=' dark:text-gray-300 py-6 text-pretty'>
+            <p className=' dark:text-gray-300 text-gray-700 py-6 text-pretty'>
               {lang.work.sub_title}
             </p>
           </header>
 
           <section className='flex flex-col gap-10 items-center justify-between w-full'>
-            {/* Technology Line - Ecommerce */}
-            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
-              <aside>
-                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
-                  {lang.work.proyect_2.title}
-                </p>
-                <p className='py-6 px-4 text-pretty'>
-                  {lang.work.proyect_2.description}
-                </p>
-              </aside>
-
-              <div className='min-h-[300px]'>
-                <WorkCard 
-                  text={'Technology Line - Ecommerce'}
-                  demoLink={'https://technologyline.com.ar/'}
-                  codeLink={'https://github.com/TrImEaS/Liquids-Work-Project'}
-                  workImg={technologylinePage}
-                ></WorkCard>
-              </div>
-            </article>
-
             {/* GestionS */}
-            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-[3px] p-2 rounded-lg min-h-[300px] border-[#378d86] dark:border-white'>
               <aside>
-                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-[#378d86] dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_5.title}
                 </p>
-                <p className='py-6 px-4 text-pretty'>
+                <p className='py-6 px-4 text-pretty dark:text-white text-gray-700'>
                   {lang.work.proyect_5.description}
                 </p>
               </aside>
@@ -89,13 +68,34 @@ export default function Work() {
               </div>
             </article>
 
-            {/* Flyer (GestionS) */}
-            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 p-2 rounded-lg min-h-[300px] border-black dark:border-white'>
+            {/* Technology Line - Ecommerce */}
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-[3px] p-2 rounded-lg min-h-[300px] border-[#378d86] dark:border-white'>
               <aside>
-                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-[#378d86] dark:border-white border-b-2 py-3'>
+                  {lang.work.proyect_2.title}
+                </p>
+                <p className='py-6 px-4 text-pretty dark:text-white text-gray-700'>
+                  {lang.work.proyect_2.description}
+                </p>
+              </aside>
+
+              <div className='min-h-[300px]'>
+                <WorkCard 
+                  text={'Technology Line - Ecommerce'}
+                  demoLink={'https://technologyline.com.ar/'}
+                  codeLink={'https://github.com/TrImEaS/Liquids-Work-Project'}
+                  workImg={technologylinePage}
+                ></WorkCard>
+              </div>
+            </article>
+
+            {/* Flyer (GestionS) */}
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-[3px] p-2 rounded-lg min-h-[300px] border-[#378d86] dark:border-white'>
+              <aside>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-[#378d86] dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_6.title}
                 </p>
-                <p className='py-6 px-4 text-pretty'>
+                <p className='py-6 px-4 text-pretty dark:text-white text-gray-700'>
                   {lang.work.proyect_6.description}
                 </p>
               </aside>
@@ -111,12 +111,12 @@ export default function Work() {
             </article>
             
             {/* Menu_Card */}
-            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] w-full border-black dark:border-white p-2 rounded-lg'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-[3px] min-h-[300px] w-full border-[#378d86] dark:border-white p-2 rounded-lg'>
               <aside>
-                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-[#378d86] dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_4.title}
                 </p>
-                <p className='py-6 px-4 text-pretty'>
+                <p className='py-6 px-4 text-pretty dark:text-white text-gray-700'>
                   {lang.work.proyect_4.description}
                 </p>
               </aside>
@@ -132,12 +132,12 @@ export default function Work() {
             </article>
 
             {/* QR Gen */}
-            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
+            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-[3px] min-h-[300px] border-[#378d86] dark:border-white p-2 rounded-lg'>
               <aside>
-                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
+                <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-[#378d86] dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_1.title}
                 </p>
-                <p className='py-6 px-4 text-pretty'>
+                <p className='py-6 px-4 text-pretty dark:text-white text-gray-700'>
                   {lang.work.proyect_1.description}
                 </p>
               </aside>
@@ -153,12 +153,12 @@ export default function Work() {
             </article>
 
             {/* LiquidS */}
-            <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-black dark:border-white p-2 rounded-lg'>
+            {/* <article className='max-w-[1200px] grid sm:grid-cols-2 gap-4 border-2 min-h-[300px] border-[#378d86] dark:border-white p-2 rounded-lg'>
               <aside>
                 <p className='text-4xl text-center text-[#378d86] dark:text-cyan-300 border-black dark:border-white border-b-2 py-3'>
                   {lang.work.proyect_3.title}
                 </p>
-                <p className='py-6 px-4 text-pretty'>
+                <p className='py-6 px-4 text-pretty dark:text-white text-gray-700'>
                   {lang.work.proyect_3.description}
                 </p>
               </aside>
@@ -171,7 +171,7 @@ export default function Work() {
                   workImg={LiquidsProject}
                 ></WorkCard>
               </div>
-            </article>
+            </article> */}
           </section>
 
           <div className='flex gap-5 flex-wrap w-full justify-center'>
